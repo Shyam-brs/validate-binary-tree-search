@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validate BST</title>
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Validate Binary Search Tree (BST)</h1>
+      <p>
+        isValidBST function: This function takes a root node and optional
+        minimum and maximum values as input, and returns a boolean indicating if
+        the tree is a valid BST. If the root node is null, the function returns
+        true. If the root node's value is less than or equal to the minimum
+        value or greater than or equal to the maximum value, the function
+        returns false. Otherwise, the function calls itself recursively with the
+        left and right child nodes, passing the current node's value as the
+        maximum value for the left child and the minimum value for the right
+        child.
+      </p>
+
+      <p>Enter the elements of the BST separated by commas:</p>
+      <input type="text" id="treeInput" placeholder="50,30,21,45,79,62,85" />
+      <button onclick="validateBST()">Validate BST</button>
+      <p id="validationResult"></p>
+    </div>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
